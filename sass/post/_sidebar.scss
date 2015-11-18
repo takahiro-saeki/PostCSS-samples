@@ -1,0 +1,7 @@
+.favorite-post {
+  span {
+    border: solid $base-1px #ccc;
+    @include PropertySetPrefix(border-radius, $base-5px);
+    padding: $base-8px $base-10px;
+  }
+}

@@ -1,0 +1,32 @@
+nav {
+  border-bottom: solid 1px #ccc;
+  padding: 1rem 0;
+  @extend .flex-stretch;
+  list-style:none;
+}
+
+.img-size img {
+  width:100%;
+  height:auto;
+}
+
+.navList {
+  li {
+    a {
+      text-decoration: none;
+      @include ValueSetPrefix(vertical-align, baseline-middle);
+      &:link {
+        color: #0000ff;
+      }
+      &:visited {
+        color: #000080;
+      }
+      &:hover {
+        color: green;
+      }
+      &:active {
+        color: #ff8000;
+      }
+    }
+  }
+}

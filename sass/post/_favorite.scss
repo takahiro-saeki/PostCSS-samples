@@ -1,0 +1,31 @@
+.favorite-list {
+  list-style:none;
+  padding: $base-15px 0;
+  border-bottom: $base-1px solid #ccc;
+  img {
+    width: 100%;
+    height:auto;
+  }
+}
+
+.favorite-text {
+  margin: $base-5px 0;
+  font-size: $base-14px;
+}
+
+.favorite-date {
+  font-size:$base-13px;
+}
+
+.favorite-more {
+  text-align:center;
+  margin: $base-20px 0;
+  span {
+    display: inline-block;
+    border: solid $light $base-1px;
+    padding: $base-10px $base-5px;
+    width: 100%;
+    background-color: $light;
+    color: #fff;
+  }
+}
