@@ -8,6 +8,16 @@ module.exports = function(grunt) {
     postcss: {
       options: {
         processors: [
+          require('autoprefixer')(),
+          require('cssnext')(),
+          require('postcss-custom-properties')(),
+          require('postcss-import')(),
+          //圧縮すると可読難になるので一旦コメントアウト
+          //require('cssnano')(),
+          require('postcss-simple-extend')(),
+          require('postcss-mixins')(),
+          require('postcss-simple-vars')(),
+          require('postcss-nested')()
         ]
       },
       dist: {
