@@ -1,0 +1,11 @@
+.test {
+  width: 50px;
+  height: auto;
+}
+
+.rectangle {
+ size: 400px 200px;
+}
+.square {
+ size: 250px;
+}
