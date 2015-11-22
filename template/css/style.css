@@ -1,68 +1,16 @@
-/* cssnext -test */
-.cssnext {
-  background: #FF0000;
-  background: rgba(255, 0, 0, 0.9);
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+    .bar {
+        display: block
+    }
+}
+.laco {
+    opacity: 1
+}
+.hoge {
+    width: 200px
 }
 
-/* autoPrefixer -test */
-.autoprefixer {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/* cssnext rootテスト */
-.test {
-  font-size: 1rem;
-}
-
-.phone_title {
-  width: 500px;
-}
-
-@media (max-width: 500px) {
-  .phone_title {
-    width: auto;
-  }
-}
-
-body.is_dark .phone_title {
-  color: white;
-}
-
-.phone img {
-  display: block;
-}
-
-/* @extend -test */
-.box-wide,
-.box-small {
-  width: 200px;
-  height: 100px;
-  background-color: #ccc;
-  padding: 10px;
-  font-size: 1.5rem;
-}
-
-.box-wide {
-  width: 400px;
-}
-
-.box-small {
-  width: 100px;
-  height: 50px;
-}
-
-.foo,
-.bar {
-  font-size: 40em;
-}
-
-.foo {
-  color: red;
-}
-
-.bar {
-  color: orange;
+.testcase {
+  font-size: 15px;
+  width: 30px;
 }

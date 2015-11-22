@@ -1,28 +1,42 @@
 module.exports = function(grunt) {
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-connect');
   grunt.loadNpmTasks('grunt-simple-ejs');
-  grunt.loadNpmTasks('grunt-postcss');
-  grunt.registerTask('default', ['postcss','watch','ejs:dev']);
+  grunt.registerTask('default', ['postcss','watch','ejs:dev','connect']);
   grunt.initConfig({
     postcss: {
       options: {
         processors: [
-          require('autoprefixer')(),
-          require('cssnext')(),
-          require('postcss-custom-properties')(),
-          require('postcss-import')(),
-          //圧縮すると可読難になるので一旦コメントアウト
-          //require('cssnano')(),
-          require('postcss-simple-extend')(),
+          require('postcss-partial-import')(),
+          require('postcss-extend')(),
           require('postcss-mixins')(),
+          require('autoprefixer')(),
+          require('postcss-nested')(),
           require('postcss-simple-vars')(),
-          require('postcss-nested')()
+          require('postcss-size')(),
+          require('postcss-sprites')({
+            spritePath    : 'template/img/main.png',
+            from: 'css/app.css',
+            to: 'css/app2.css'
+          }),
+          require('cssnext')(),
+          require('postcss-media-minmax')()
+          //require('cssnano')()
         ]
       },
+      //dist: {
+        //src: ['css/*.css'],
+        //dest: 'template/css/style.css'
+      //}
       dist: {
-        src: 'css/style.css',
-        dest: 'template/css/style.css'
+        files: [{
+          expand: true,
+          cwd: 'css/',
+          src: ['*.css'],
+          dest: 'template/css/',
+          ext: '.css'
+        }]
       }
     },
     ejs: {
@@ -47,6 +61,10 @@ module.exports = function(grunt) {
       ejs: {
         files: ['**/*.ejs'],
         tasks: ['ejs:dev']
+      },
+      postcss: {
+        files: 'css/*.css',
+        tasks: ['postcss']
       }
     }
   });

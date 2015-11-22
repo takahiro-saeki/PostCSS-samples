@@ -1,65 +1,11 @@
-/* cssnext -test */
-.cssnext {
-  background: color(red alpha(-10%));
+@import 'test.css';
+@import 'hoge';
+@import 'var';
+.hoge {
+    width: 200px
 }
 
-/* autoPrefixer -test */
-.autoprefixer {
-  display: flex;
-}
-
-/* cssnext rootテスト */
-$base-16px: 1rem;
-$base-24px: 1.5rem;
-.test {
-  font-size: $base-16px;
-}
-
-.phone {
-    &_title {
-        width: 500px;
-        @media (max-width: 500px) {
-            width: auto;
-        }
-        body.is_dark & {
-            color: white;
-        }
-    }
-    img {
-        display: block;
-    }
-}
-
-/* @extend -test */
-@define-placeholder box {
-  width: 200px;
-  height: 100px;
-  background-color: #ccc;
-  padding: 10px;
-  font-size: $base-24px;
-}
-
-.box-wide {
-  @extend box;
-  width: 400px;
-}
-
-.box-small {
-  @extend box;
-  width: 100px;
-  height: 50px;
-}
-
-@define-placeholder gigantic {
-  font-size: 40em;
-}
-
-.foo {
-  @extend gigantic;
-  color: red;
-}
-
-.bar {
-  @extend gigantic;
-  color: orange;
+.testcase {
+  font-size: $base-15px;
+  width: $test;
 }
