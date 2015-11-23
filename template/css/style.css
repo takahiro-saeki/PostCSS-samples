@@ -1,16 +1,54 @@
-@media screen and (min-width: 500px) and (max-width: 1200px) {
-    .bar {
-        display: block
+h1 {
+    font-size: 26px;
+    border-bottom: solid 3px #ccc;
+    padding: 5px;
+    margin: 30px auto
+}
+/* custom properties & var() */
+.root {
+    background-color: #b2ebf2;
+    padding: 20px 0
+}
+/* calc() */
+.calc {
+    font-size: 14px
+}
+/* custom media queries and ranges */
+@media (max-width: 767px) {
+    .media-color {
+        background-color: #00b0ff
     }
 }
-.laco {
-    opacity: 1
+@media (min-width: 768px) and (max-width: 991px) {
+    .media-color {
+        background-color: #00e5ff
+    }
 }
-.hoge {
-    width: 200px
+@media (min-width: 992px) {
+    .media-color {
+        background-color: #1de9b6
+    }
 }
-
-.testcase {
-  font-size: 15px;
-  width: 30px;
+/* color() */
+a {
+    color: #FF0000;
+    color: rgba(255, 0, 0, 0.9)
+}
+/* hwb() */
+.tests {
+    color: #80FF00;
+    color: rgba(128, 255, 0, 0.5)
+}
+/* gray() */
+.foo {
+    color: rgb(85, 85, 85)
+}
+.bar {
+    color: #1A1A1A;
+    color: rgba(26, 26, 26, 0.5)
+}
+/* rem units */
+h4 {
+    font-size: 24px;
+    font-size: 1.5rem
 }

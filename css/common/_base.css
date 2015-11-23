@@ -1,0 +1,63 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+.hogege {
+  size: 20rem 10rem;
+}
+
+.container {
+  margin: 0 auto;
+  &:after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+
+.foo {
+    background-color: gray(0);
+    size: 20rem 10rem;
+}
+
+.foo1 {
+  background-color: gray(96%);
+  size: 20rem 10rem;
+}
+
+.foo2 {
+  background-color: gray;
+  size: 200px 100px;
+}
+
+.color1 {
+  background-color: color(red a(90%));
+  size: 200px 100px;
+}
+
+.color2 {
+  background-color: color(red a(50%));
+  size: 200px 100px;
+}
+
+.color3 {
+  background-color: color(red a(10%));
+  size: 200px 100px;
+}
+
+.laco {
+  padding: calc(10rem - 1rem);
+  width: calc(10rem * 2);
+}
+
+:root {
+ --brand-color: #88E18E;
+}
+
+.logo {
+ color: var(--brand-color)
+}

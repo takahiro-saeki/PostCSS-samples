@@ -1,11 +1,2 @@
-@import 'test.css';
-@import 'hoge';
-@import 'var';
-.hoge {
-    width: 200px
-}
-
-.testcase {
-  font-size: $base-15px;
-  width: $test;
-}
+@import 'common/basic';
+@import 'common/cssnext';

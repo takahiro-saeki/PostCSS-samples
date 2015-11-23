@@ -1,0 +1,38 @@
+@import 'rem';
+
+@define-mixin min $minWidth {
+  @media screen and (width >= $minWidth) {
+    @mixin-content;
+  }
+}
+
+@define-mixin max $maxWidth {
+  @media screen and (width <= $maxWidth) {
+    @mixin-content;
+  }
+}
+
+@define-mixin between $minWidth, $maxWidth {
+  @media screen and (width >= $minWidth) and (width <= $maxWidth) {
+    @mixin-content;
+  }
+}
+
+/* test code */
+.media-query {
+  @mixin min $base-16px {
+    width:150px;
+  }
+}
+
+.media-query {
+  @mixin max 300px {
+    width:150px;
+  }
+}
+
+.media-query {
+  @mixin between 200px, 300px {
+    width:150px;
+  }
+}
