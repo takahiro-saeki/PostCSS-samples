@@ -1,6 +1,28 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
 h1 {
   font-size: 26px;
   border-bottom: solid 3px #ccc;
   padding: 5px;
   margin: 30px auto;
+}
+
+.copyright {
+  text-align: center;
+  p {
+    margin: 0;
+    padding: 1.3rem 0;
+  }
+}
+
+.blog-footer {
+  margin: 5.0rem 0 0 0;
+  background-color: #f8f8f8;
+  border-top: solid 1px #e7e7e7;
 }

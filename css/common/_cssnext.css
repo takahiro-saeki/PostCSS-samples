@@ -31,54 +31,95 @@
 
 /* calc() */
 .calc {
-   font-size: calc(7 * 2)px;
+  background-color: #e0f2f1;
+  font-size: calc(6 * 3)px;
+  width: calc(100 - 40)%;
+  padding: calc(100 / 5)px;
+  margin: 0 auto;
+  text-align: center;
 }
+
 
 /* custom media queries and ranges */
-@custom-media --small-viewport (width <= 767px);
-@custom-media --medium-between-viewport (width >= 768px);
-@custom-media --medium-viewport (width <= 991px);
-@custom-media --over (width >= 992px);
-@custom-media --large-viewport (width <= 1200px);
+@custom-media --small (width <= 767px);
+@custom-media --medium-min (width >= 768px);
+@custom-media --medium-max (width <= 991px);
+@custom-media --large (width >= 992px);
 
-@media (--small-viewport) {
-  .media-color {
-    background-color: #00b0ff;
+
+.media {
+  padding: 20px 0;
+  @media (--small) {
+    background-color: #b2ebf2;
+  }
+  @media (--medium-min) and (--medium-max) {
+    background-color: #b2dfdb;
+  }
+  @media (--large) {
+    background-color: #d1c4e9;
   }
 }
 
-@media (--medium-between-viewport) and (--medium-viewport) {
-  .media-color {
-    background-color: #00e5ff;
-  }
-}
-
-@media (--over) {
-  .media-color {
-    background-color: #1de9b6;
-  }
-}
 
 /* color() */
-a {
-  color: color(red alpha(-10%));
+.color-1,.color-2,.color-3,.color-4 {
+  text-align: center;
+  padding: 20px 0;
 }
+.color-1 {
+  background-color: color(#006064 alpha(-90%));
+}
+
+.color-2 {
+  background-color: color(#006064 alpha(-60%));
+}
+
+.color-3 {
+  background-color: color(#006064 alpha(-30%));
+}
+
+.color-4 {
+  background-color: color(#006064 alpha(-10%));
+}
+
 
 /* hwb() */
-.tests {
-  color: hwb(90, 0%, 0%, 0.5);
+.hwd-1 {
+  background-color: rgba(128, 255, 0, 0.5);
+  padding: 20px 0;
+  text-align: center;
 }
+
+.hwd-2 {
+  background-color: rgba(128, 100, 30, 0.5);
+  padding: 20px 0;
+  text-align: center;
+}
+
 
 /* gray() */
-.foo {
-  color: gray(85);
+.gray-1,.gray-2,.gray-3 {
+  padding: 20px 0;
+  text-align: center;
+}
+.gray-1 {
+  background-color: gray(120);
 }
 
-.bar {
-  color: gray(10%, 50%);
+.gray-2 {
+  background-color: gray(30%, 90%);
 }
+
+.gray-3 {
+  background-color: gray(90%, 30%);
+}
+
 
 /* rem units */
-h4 {
-  font-size: 1.5rem;
+.rem-Units {
+  width: 40rem;
+  padding: 2.0rem 0;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #b2dfdb;
 }
