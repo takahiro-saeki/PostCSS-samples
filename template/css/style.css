@@ -5,9 +5,20 @@ h1 {
     margin: 30px auto
 }
 /* custom properties & var() */
-.root {
-    background-color: #b2ebf2;
-    padding: 20px 0
+.root-1, .root-2, .root-3 {
+    padding: 20px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 18px
+}
+.root-1 {
+    background-color: #b2ebf2
+}
+.root-2 {
+    background-color: #b2dfdb
+}
+.root-3 {
+    background-color: #d1c4e9
 }
 /* calc() */
 .calc {

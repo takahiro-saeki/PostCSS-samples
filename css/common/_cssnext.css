@@ -1,14 +1,33 @@
 /* custom properties & var() */
 :root {
   --bgBlue: #b2ebf2;
+  --bgGreen: #b2dfdb;
+  --bgPurple: #d1c4e9;
   --padding: 20px 0;
-  --fontSize: 1rem;
+  --fontSize: 18px;
+  --width: 100%;
+  --textCenter: center;
 }
 
-.root {
-  background-color: var(--bgBlue);
+.root-1,.root-2,.root-3 {
   padding: var(--padding);
+  width: var(--width);
+  text-align: var(--textCenter);
+  font-size: var(--fontSize);
 }
+
+.root-1 {
+  background-color: var(--bgBlue);
+}
+
+.root-2 {
+  background-color: var(--bgGreen);
+}
+
+.root-3 {
+  background-color: var(--bgPurple);
+}
+
 
 /* calc() */
 .calc {
