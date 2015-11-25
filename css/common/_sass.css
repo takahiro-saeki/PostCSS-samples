@@ -1,11 +1,106 @@
-/* extend */
-
 /* mixin */
+@define-mixin box {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #ffcdd2;
+}
+
+.box-1 {
+  @mixin box;
+}
+
+.box-2 {
+  @mixin box;
+  background-color: #f8bbd0;
+}
+
+.box-3 {
+  @mixin box;
+  background-color: #8e24aa;
+  color: #fff;
+}
+
+@define-mixin min $minWidth {
+  @media screen and (width >= $minWidth) {
+    @mixin-content;
+  }
+}
+
+@define-mixin max $maxWidth {
+  @media screen and (width <= $maxWidth) {
+    @mixin-content;
+  }
+}
+
+@define-mixin between $minWidth, $maxWidth {
+  @media screen and (width >= $minWidth) and (width <= $maxWidth) {
+    @mixin-content;
+  }
+}
+
+.media-query {
+  @mixin min 16px {
+    width:150px;
+  }
+}
+
+.media-query {
+  @mixin max 300px {
+    width:150px;
+  }
+}
+
+.media-query {
+  @mixin between 200px, 300px {
+    width:150px;
+  }
+}
+
+/* extend */
+.extend {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #ffccbc;
+}
+
+.extend-1 {
+  @extend .extend;
+  background-color: #d7ccc8;
+}
+
+.extend-2 {
+  @extend .extend;
+  background-color: #757575;
+  color: #fff;
+}
 
 /* nested */
+.nest {
+  text-align: center;
+  li {
+    list-style:none;
+    display: inline-block;
+    padding: 20px;
+    border: solid 1px #ccc;
+    background-color: color(#006064 alpha(-92%));
+    margin: 0 10px;
+  }
+}
 
 /* vars */
+$boxColor1: #84ffff;
+$boxColor2: #a7ffeb;
 
+.vars-1 {
+  padding: 20px 0;
+  text-align: center;
+  background-color: $boxColor1;
+}
+
+.vars-2 {
+  @extend .vars-1;
+  background-color: $boxColor2;
+}
 /* autoprefixer */
 
 /* size */

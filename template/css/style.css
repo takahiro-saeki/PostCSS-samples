@@ -129,10 +129,75 @@ h1 {
     margin: 0 auto;
     background-color: #b2dfdb;
 }
-/* extend */
 /* mixin */
+.box-1 {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #ffcdd2;
+}
+.box-2 {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #ffcdd2;
+    background-color: #f8bbd0;
+}
+.box-3 {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #ffcdd2;
+    background-color: #8e24aa;
+    color: #fff;
+}
+@media screen and (min-width: 16px) {
+    .media-query {
+        width: 150px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .media-query {
+        width: 150px;
+    }
+}
+@media screen and (min-width: 200px) and (max-width: 300px) {
+    .media-query {
+        width: 150px;
+    }
+}
+/* extend */
+.extend, .extend-1, .extend-2 {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #ffccbc;
+}
+.extend-1 {
+    background-color: #d7ccc8;
+}
+.extend-2 {
+    background-color: #757575;
+    color: #fff;
+}
 /* nested */
+.nest {
+    text-align: center;
+}
+.nest li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px;
+    border: solid 1px #ccc;
+    background-color: #006064;
+    background-color: rgba(0, 96, 100, 0.07999999999999996);
+    margin: 0 10px;
+}
 /* vars */
+.vars-1, .vars-2 {
+    padding: 20px 0;
+    text-align: center;
+    background-color: #84ffff;
+}
+.vars-2 {
+    background-color: #a7ffeb;
+}
 /* autoprefixer */
 /* size */
 /* sprites */

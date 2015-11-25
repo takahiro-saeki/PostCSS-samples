@@ -19,8 +19,7 @@ module.exports = function(grunt) {
             to: 'css/app2.css'
           }),
           require('cssnext')(),
-          require('postcss-write-svg')(),
-          require("postcss-custom-properties")()
+          require('postcss-write-svg')()
           //require('cssnano')()
         ]
       },
