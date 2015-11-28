@@ -3,12 +3,19 @@ PostCSSのサンプル集
 
 PostCSSのサンプルコード集です。一応テスト段階なのでこれから諸々用意します。
 
-## description
-ビルドツールはgruntを使用します。gulp派の方は申し訳ないです。
+## 概要
+ビルドツールはgruntを使用します。 テンプレートはejsを使用しています。
+本書籍で使用するファイルは_cssnext.cssと_plugin.cssになります。
 
-## how to
-sudo npm installしてもらった後にnpm startしてください。
+## 使い方
+クローンあるいはデスクトップにダウンロードして頂いた後に
+`sudo npm install`
+してください。その後
+`npm start` 
+してください。
 
-## Licence
+
+
+## ライセンス
 
 [MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
