@@ -26,10 +26,5 @@
     "postcss-reference": "^1.0.2",
     "postcss-simple-vars": "^1.1.0",
     "postcss-size": "^1.0.0",
-    "postcss-sprites": "^2.0.2",
-    "postcss-write-svg": "^2.0.0"
-  },
-  "dependencies": {
-    "pixrem": "^3.0.0"
   }
 }
