@@ -8,20 +8,23 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar navbar-default fixed">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#properties ">properties</a></li>
-        <li><a href="#calc">calc</a></li>
-        <li><a href="#media">media</a></li>
-        <li><a href="#color">color</a></li>
-        <li><a href="#hwb">hwb</a></li>
-        <li><a href="#gray">gray</a></li>
-        <li><a href="#rem-Units">rem units</a></li>
-      </ul>
-  </nav>
 
-<!-- extend -->
-<section id="properties" class="container">
+<nav class="navbar navbar-default fixed pc">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#mixin">mixin</a></li>
+      <li><a href="#extend">extend</a></li>
+      <li><a href="#nested">nested</a></li>
+      <li><a href="#vars">vars</a></li>
+      <li><a href="#autoprefixer">autoprefixer</a></li>
+      <li><a href="#size">size</a></li>
+      <li><a href="#advanced-variables">advanced-variables</a></li>
+      <li><a href="index.html" class="right">cssnext</a></li>
+      <li class="active"><a href="plugin.html">plugin</a></li>
+    </ul>
+</nav>
+
+<!-- custom properties & var -->
+<section id="mixin" class="container add-padding">
   <div class="row">
     <h1 class="col-sm-12">mixin</h1>
     <div class="col-sm-4"><div class="box-1">mixin</div></div>
@@ -30,8 +33,8 @@
   </div>
 </section>
 
-<!-- custom properties & var -->
-<section id="properties" class="container">
+<!-- extend -->
+<section id="extend" class="container">
   <div class="row">
     <h1 class="col-sm-12">extend</h1>
     <div class="col-sm-4"><div class="extend">extend</div></div>
@@ -41,7 +44,7 @@
 </section>
 
 <!-- nested -->
-<section id="properties" class="container">
+<section id="nested" class="container">
   <div class="row">
     <h1 class="col-sm-12">nested</h1>
     <div class="col-sm-12 nest">
@@ -56,7 +59,7 @@
 </section>
 
 <!-- vars -->
-<section id="properties" class="container">
+<section id="vars" class="container">
   <div class="row">
     <h1 class="col-sm-12">vars</h1>
     <div class="col-sm-6 "><div class="vars-1">vars</div></div>
@@ -65,7 +68,7 @@
 </section>
 
 <!-- autoprefixer -->
-<section id="properties" class="container">
+<section id="autoprefixer" class="container">
   <div class="row">
     <h1 class="col-sm-12 flex">autoprefixer</h1>
     <div class="col-sm-12 flex">
@@ -79,7 +82,7 @@
 </section>
 
 <!-- size -->
-<section id="properties" class="container">
+<section id="size" class="container">
   <div class="row">
     <h1 class="col-sm-12">size</h1>
     <div class="col-sm-6"><div class="size">size-box</div></div>
@@ -88,16 +91,18 @@
 </section>
 
 <!-- postcss-advanced-variables -->
-<section id="properties" class="container">
+<section id="advanced-variables" class="container">
   <div class="row">
-    <h1 class="col-sm-12">postcss-advanced-variables</h1>
+    <h1 class="col-sm-12">advanced-variables</h1>
     <div class="col-sm-4"><div class="blue">ブロック</div></div>
     <div class="col-sm-4"><div class="red">ブロック</div></div>
     <div class="col-sm-4"><div class="green">ブロック</div></div>
-    <div class="col-sm-3"><div class="number-1">ブロック</div></div>
-    <div class="col-sm-3"><div class="number-3">ブロック</div></div>
-    <div class="col-sm-3"><div class="number-5">ブロック</div></div>
-    <div class="col-sm-3"><div class="number-7">ブロック</div></div>
+    <div class="block-wrap">
+      <div class="col-sm-3"><div class="number-1">ブロック</div></div>
+      <div class="col-sm-3"><div class="number-3">ブロック</div></div>
+      <div class="col-sm-3"><div class="number-5">ブロック</div></div>
+      <div class="col-sm-3"><div class="number-7">ブロック</div></div>
+    </div>
   </div>
 </section>
 

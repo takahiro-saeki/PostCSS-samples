@@ -1,4 +1,11 @@
 $(function(){
+  $('li a').on('click', function(){
+    $('ul li').removeClass('active');
+    $(this).closest('li').addClass('active');
+  })
+})
+
+$(function(){
    $('a[href^=#]').on('click', function() {
       var speed = 400;
       var href= $(this).attr("href");

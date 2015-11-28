@@ -1,0 +1,6 @@
+.pc {
+  display: block;
+  @mixin max 768px {
+    display:none;
+  }
+}

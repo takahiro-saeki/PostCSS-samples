@@ -10,7 +10,7 @@ h1 {
   font-size: 26px;
   border-bottom: solid 3px #ccc;
   padding: 5px;
-  margin: 30px auto;
+  margin: 60px auto;
 }
 
 .copyright {
@@ -34,5 +34,17 @@ h1 {
 }
 
 .add-padding {
-  padding: 80px 0 0 0;
+  padding: 40px 0 0 0;
+}
+
+.block-wrap {
+  padding: 60px 0;
+  float: left;
+  width: 100%;
+}
+
+.right {
+  text-align: right;
+  margin: 0 0 0 100px;
+  border-left: solid 1px #ccc;
 }
