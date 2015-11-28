@@ -25,6 +25,14 @@ h1 {
     background-color: #f8f8f8;
     border-top: solid 1px #e7e7e7;
 }
+.fixed {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}
+.add-padding {
+    padding: 80px 0 0 0;
+}
 /* custom properties & var() */
 .root-1, .root-2, .root-3 {
     padding: 20px 0;
@@ -199,7 +207,71 @@ h1 {
     background-color: #a7ffeb;
 }
 /* autoprefixer */
+.flex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+}
+.flex li {
+    padding: 20px 50px;
+    background-color: #ffcdd2;
+    list-style: none;
+    margin: 20px;
+}
 /* size */
-/* sprites */
-/* svg */
+.size {
+    width: 300px;
+    height: auto;
+    padding: 30px 0;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #ffccbc;
+}
 /* advanced-variables */
+.blue {
+    background-color: #0000FF;
+    background-color: rgba(0, 0, 255, 0.4);
+    text-align: center;
+    padding: 20px;
+}
+.red {
+    background-color: #FF0000;
+    background-color: rgba(255, 0, 0, 0.4);
+    text-align: center;
+    padding: 20px;
+}
+.green {
+    background-color: #008000;
+    background-color: rgba(0, 128, 0, 0.4);
+    text-align: center;
+    padding: 20px;
+}
+.number-1 {
+    background-color: #800080;
+    background-color: rgba(128, 0, 128, 0.4);
+    padding: 20px 0;
+    text-align: center;
+}
+.number-3 {
+    background-color: #800080;
+    background-color: rgba(128, 0, 128, 0.4);
+    padding: 20px 0;
+    text-align: center;
+}
+.number-5 {
+    background-color: #800080;
+    background-color: rgba(128, 0, 128, 0.4);
+    padding: 20px 0;
+    text-align: center;
+}
+.number-7 {
+    background-color: #800080;
+    background-color: rgba(128, 0, 128, 0.4);
+    padding: 20px 0;
+    text-align: center;
+}

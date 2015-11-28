@@ -101,12 +101,41 @@ $boxColor2: #a7ffeb;
   @extend .vars-1;
   background-color: $boxColor2;
 }
+
 /* autoprefixer */
+.flex {
+  display:flex;
+  justify-content: space-between;
+  li {
+    padding: 20px 50px;
+    background-color: #ffcdd2;
+    list-style:none;
+    margin: 20px;
+  }
+}
 
 /* size */
-
-/* sprites */
-
-/* svg */
+.size {
+  size: 300px auto;
+  padding: 30px 0;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #ffccbc;
+}
 
 /* advanced-variables */
+@each $color in (blue, red, green) {
+  .$color {
+    background-color: color($color alpha(-60%));
+    text-align: center;
+    padding: 20px;
+  }
+}
+
+@for $index from 1 to 7 by 2 {
+    .number-$index {
+        background-color: color(purple alpha(-60%));
+        padding: 20px 0;
+        text-align:center;
+    }
+}

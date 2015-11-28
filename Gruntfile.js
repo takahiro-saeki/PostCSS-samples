@@ -1,7 +1,13 @@
 module.exports = function(grunt) {
   require('load-grunt-tasks')(grunt);
-  grunt.registerTask('default', ['postcss','connect','watch','ejs:dev']);
+  grunt.registerTask('default', ['postcss','connect','watch','ejs:dev','concat']);
   grunt.initConfig({
+    concat: {
+      dist: {
+        src: 'js/common.js',
+        dest: 'template/js/common.js'
+      }
+    },
     postcss: {
       options: {
         processors: [
@@ -14,9 +20,9 @@ module.exports = function(grunt) {
           require('postcss-simple-vars')(),
           require('postcss-size')(),
           require('postcss-sprites')({
-            spritePath : 'template/img/main.png',
-            from: 'css/app.css',
-            to: 'css/app2.css'
+            spritePath : 'img/main.png',
+            from: 'css/_sass.css',
+            to: 'template/css/style.css'
           }),
           require('cssnext')(),
           require('postcss-write-svg')()
@@ -59,6 +65,10 @@ module.exports = function(grunt) {
       postcss: {
         files: ['css/common/*.css','css/*.css'],
         tasks: ['postcss']
+      },
+      concat: {
+        files: ['js/*.js'],
+        tasks: ['concat']
       }
     }
   });

@@ -26,3 +26,13 @@ h1 {
   background-color: #f8f8f8;
   border-top: solid 1px #e7e7e7;
 }
+
+.fixed {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+}
+
+.add-padding {
+  padding: 80px 0 0 0;
+}
