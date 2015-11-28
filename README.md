@@ -5,13 +5,13 @@ PostCSSのサンプルコード集です。一応テスト段階なのでこれ�
 
 ## 概要
 ビルドツールはgruntを使用します。 テンプレートはejsを使用しています。
-本書籍で使用するファイルは_cssnext.cssと_plugin.cssになります。
+書籍で使用するファイルは_cssnext.cssと_plugin.cssとgruntfile.jsになります。
 
 ## 使い方
 クローンあるいはデスクトップにダウンロードして頂いた後に
-`sudo npm install`
+`$ sudo npm install`
 してください。その後
-`npm start` 
+`$ npm start`
 してください。
 
 

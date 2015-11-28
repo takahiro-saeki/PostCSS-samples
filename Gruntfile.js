@@ -19,13 +19,7 @@ module.exports = function(grunt) {
           require('postcss-nested')(),
           require('postcss-simple-vars')(),
           require('postcss-size')(),
-          require('postcss-sprites')({
-            spritePath : 'img/main.png',
-            from: 'css/_sass.css',
-            to: 'template/css/style.css'
-          }),
           require('cssnext')(),
-          require('postcss-write-svg')()
           //require('cssnano')()
         ]
       },
