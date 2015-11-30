@@ -133,9 +133,9 @@ $boxColor2: #a7ffeb;
 }
 
 @for $index from 1 to 7 by 2 {
-    .number-$index {
-        background-color: color(purple alpha(-60%));
-        padding: 20px 0;
-        text-align:center;
-    }
+  .number-$index {
+    background-color: color(purple alpha(-60%));
+    padding: 20px 0;
+    text-align:center;
+  }
 }
